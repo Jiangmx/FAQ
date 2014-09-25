@@ -17,8 +17,9 @@ Question and Answer
     
     TTY设备包括虚拟控制台，串口以及伪终端设备。
     
-    2. pty（虚拟终端):
-    但是如果我们远程telnet到主机或使用xterm时不也需要一个终端交互么？是的，这就是虚拟终端pty(pseudo-tty)
+    2. pty（伪造的tty):
+    但是如果我们远程telnet到主机或使用xterm时不也需要一个终端交互么？是的，这就是pty(pseudo-tty)
+    
     3. pts/ptmx(pts/ptmx结合使用，进而实现pty):
     pts(pseudo-terminal slave)是pty的实现方法，与ptmx(pseudo-terminal master)配合使用实现pty。
     
