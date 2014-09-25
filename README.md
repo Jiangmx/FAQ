@@ -13,6 +13,8 @@ Question and Answer
     
     终端是一种字符型设备，它有多种类型，通常使用tty来简称各种类型的终端设备。
     
+    tty也是一个Unix命令，用来给出当前终端设备的名称。
+    
     2. pty（伪造的tty):
     远程telnet到主机或使用xterm时不也需要一个终端交互么？是的，这就是pty(pseudo-tty)
     
