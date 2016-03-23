@@ -12,3 +12,26 @@ ESP8266较差工具链的问题：
 
   sudo dpkg --add-architecture i386
 
+Linux下启动xampp时提示另一个apache在运行,另外一个服务已经启动....
+
+    我估计刚才是删除了lampp文件夹，并没有停止服务，问怎样才能删掉第一次安装时的服务，如mysql,apache,
+    [root@localhost lampp]# /opt/lampp/lampp start
+    Starting XAMPP for Linux 1.7...
+    XAMPP: Another web server daemon is already running.
+    XAMPP: Another MySQL daemon is already running.
+    XAMPP: Another FTP daemon is already running.
+    XAMPP for Linux started.
+    
+    用下面方法解决：
+    
+    查看这些服务到底有没有运行
+    lsof -i:80
+    lsof -i:3306
+    lsof -i:21
+    
+    找到哪个在运行后用下面命令：
+    
+    pkill httpd
+    pkill mysql
+    pkill ftp
+    
