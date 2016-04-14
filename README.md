@@ -8,11 +8,21 @@ Ask and Answer
 
 --------------------------------------------------------------------------------
 
-ESP8266较差工具链的问题：
+# 嵌入式TCP/IP协议栈
+
+  - lwip
+  - uIP
+  - uC/IP
+  - FNET
+  - Cyclone TCP
+  - TinyTCP
+
+
+# ESP8266较差工具链的问题：
 
   sudo dpkg --add-architecture i386
 
-Linux下启动xampp时提示另一个apache在运行,另外一个服务已经启动....
+# Linux下启动xampp时提示另一个apache在运行,另外一个服务已经启动....
 
     我估计刚才是删除了lampp文件夹，并没有停止服务，问怎样才能删掉第一次安装时的服务，如mysql,apache,
     [root@localhost lampp]# /opt/lampp/lampp start
